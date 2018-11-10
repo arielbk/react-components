@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GithubCorner from './components/GithubCorner';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <GithubCorner 
+          // url is the only required prop
+          url="https://github.com/arielbk/react-components/"
+          // other options
+          // location="left"
+          // fill="red"
+          // color="gray"
+          // fillHover="purple"
+        />
       </div>
     );
   }
